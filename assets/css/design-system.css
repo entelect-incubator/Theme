@@ -11384,10 +11384,10 @@ p {
   text-transform: capitalize;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.75rem; }
+  font-size: 0.99925rem; }
 
 .card-category {
-  font-size: 0.75rem; }
+  font-size: 0.99925rem; }
 
 .blockquote {
   border-left: 1px solid #db3145;
@@ -12311,6 +12311,10 @@ code {
   .breadcrumb a {
     color: #fff; }
 
+.pizza-card {
+  background: url(../../../../assets/img/pizza.svg) no-repeat 15px 15px;
+  background-size: 50px; }
+
 .rtl .sidebar,
 .rtl .bootstrap-navbar {
   right: 0;
@@ -13138,7 +13142,7 @@ textarea.form-control {
     transition: 0.5s ease-out;
     border-radius: 2px;
     background-size: 100%;
-    border-radius: 20%; }
+    border-radius: 100%; }
   .register-page .square-1 {
     height: 300px;
     width: 300px;
@@ -14954,16 +14958,34 @@ hr {
   margin-left: 0; }
   hr.line-primary {
     background-color: #bf2437; }
+  hr.line-primary-center {
+    background-color: #bf2437;
+    margin: 0 auto; }
   hr.line-info {
     background-color: #1d8cf8; }
+  hr.line-info-center {
+    background-color: #1d8cf8;
+    margin: 0 auto; }
   hr.line-success {
     background-color: #387432; }
+  hr.line-success-center {
+    background-color: #387432;
+    margin: 0 auto; }
   hr.line-warning {
     background-color: #f96332; }
+  hr.line-warning-center {
+    background-color: #f96332;
+    margin: 0 auto; }
   hr.line-danger {
     background-color: #868581; }
+  hr.line-danger-center {
+    background-color: #868581;
+    margin: 0 auto; }
   hr.line-deafult {
     background-color: #db3145; }
+  hr.line-deafult-center {
+    background-color: #db3145;
+    margin: 0 auto; }
 
 .info-horizontal .icon {
   float: left;
@@ -17440,7 +17462,7 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
     .card-stats .card-body .numbers p {
       margin-bottom: 0; }
     .card-stats .card-body .numbers .card-category {
-      color: #9A9A9A;
+      color: #ffffff;
       font-size: 16px;
       line-height: 1.4em; }
   .card-stats .card-footer {
