@@ -1,4 +1,4 @@
-# [Pezza• Branding Guide &amp; Design  System](http://demos.creative-tim.com/blk-design-system/index.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Pezza• Branding Guide &amp; Design  System](https://entelect-incubator.github.io/design-system/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 ![Pezza Design System](2020-12-13-17-12-43.png)
 
