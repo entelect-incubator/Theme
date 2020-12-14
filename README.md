@@ -10,7 +10,7 @@ Now will help you create a clean and simple website that is a perfect fit for to
 
 Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. You can check the components here and the foundation here.
 
-[View Live Documentation](https://entelect-incubator.github.io/design-system/docs/documentation.html)
+[View Live Documentation](https://entelect-incubator.github.io/DesignSystem/docs/documentation.html)
 
 ## Bootstrap 4 Support
 
