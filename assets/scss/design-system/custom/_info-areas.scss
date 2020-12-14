@@ -29,20 +29,44 @@ hr {
   &.line-primary {
     background-color: $primary;
   }
+  &.line-primary-center {
+    background-color: $primary;
+    margin: 0 auto;
+  }
   &.line-info {
     background-color: $info;
+  }
+  &.line-info-center {
+    background-color: $info;
+    margin: 0 auto;
   }
   &.line-success {
     background-color: $success;
   }
+  &.line-success-center {
+    background-color: $success;
+    margin: 0 auto;
+  }
   &.line-warning {
     background-color: $warning;
+  }
+  &.line-warning-center {
+    background-color: $warning;
+    margin: 0 auto;
   }
   &.line-danger {
     background-color: $danger;
   }
+  &.line-danger-center {
+    background-color: $danger;
+    margin: 0 auto;
+  }
   &.line-deafult {
     background-color: $default;
+  }
+  &.line-deafult-center {
+    background-color: $default;
+    margin: 0 auto;
   }
 }
 
