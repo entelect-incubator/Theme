@@ -4,7 +4,6 @@
 		<title>Pezza - Order Confirmation</title>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-		<link href="https://fonts.googleapis.com/css2?family=Belleza:wght@400&family=Cookie:wght@400&display=swap" rel="stylesheet" />
 		<style>
 			* {
 				box-sizing: border-box;
@@ -13,236 +12,8 @@
 			}
 
 			body {
-				font-family: 'Belleza', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-				background-color: #f9fafb;
-				color: #1f2937;
-				line-height: 1.6;
-			}
-
-			a[x-apple-data-detectors] {
-				color: inherit !important;
-				text-decoration: inherit !important;
-			}
-
-			.email-container {
-				max-width: 600px;
-				margin: 20px auto;
-				background-color: #ffffff;
-				border: 1px solid #e5e7eb;
-				border-radius: 8px;
-				overflow: hidden;
-				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-			}
-
-			.header {
-				background-color: #dc3348;
-				padding: 40px 30px;
-				text-align: center;
-				color: white;
-			}
-
-			.header h1 {
-				font-size: 32px;
-				font-family: 'Cookie', cursive;
-				margin: 0 0 8px 0;
-				font-weight: 400;
-			}
-
-			.header p {
-				font-size: 14px;
-				margin: 0;
-				opacity: 0.95;
-			}
-
-			.content {
-				padding: 40px 30px;
-			}
-
-			.greeting {
-				font-size: 18px;
-				font-weight: 600;
-				margin-bottom: 16px;
-				color: #1f2937;
-			}
-
-			.section-title {
-				font-size: 16px;
-				font-weight: 600;
-				margin-top: 24px;
-				margin-bottom: 12px;
-				color: #dc3348;
-			}
-
-			.order-details {
-				background-color: #f9fafb;
-				border-left: 4px solid #fec844;
-				padding: 16px;
-				margin: 16px 0;
-				border-radius: 4px;
-			}
-
-			.item {
-				display: flex;
-				justify-content: space-between;
-				padding: 8px 0;
-				border-bottom: 1px solid #e5e7eb;
-			}
-
-			.item:last-child {
-				border-bottom: none;
-			}
-
-			.item-name {
-				color: #1f2937;
-				font-weight: 500;
-			}
-
-			.item-price {
-				color: #dc3348;
-				font-weight: 600;
-			}
-
-			.total-section {
-				background-color: #fec844;
-				padding: 16px;
-				border-radius: 4px;
-				margin-top: 16px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.total-label {
-				font-size: 16px;
-				font-weight: 600;
-				color: #1f2937;
-			}
-
-			.total-amount {
-				font-size: 24px;
-				font-weight: 600;
-				color: #dc3348;
-			}
-
-			.cta-button {
-				display: inline-block;
-				background-color: #dc3348;
-				color: white;
-				padding: 12px 32px;
-				text-decoration: none;
-				border-radius: 4px;
-				margin-top: 24px;
-				font-weight: 600;
-				text-align: center;
-			}
-
-			.footer {
-				background-color: #f9fafb;
-				padding: 24px 30px;
-				text-align: center;
-				border-top: 1px solid #e5e7eb;
-				font-size: 13px;
-				color: #6b7280;
-			}
-
-			.footer p {
-				margin: 8px 0;
-			}
-
-			.divider {
-				height: 1px;
-				background-color: #e5e7eb;
-				margin: 24px 0;
-			}
-
-			@media (max-width: 600px) {
-				.header {
-					padding: 30px 20px;
-				}
-
-				.header h1 {
-					font-size: 28px;
-				}
-
-				.content {
-					padding: 24px 20px;
-				}
-
-				.email-container {
-					margin: 10px;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<div class="email-container">
-			<!-- Header -->
-			<div class="header">
-				<h1>🍕 Pezza</h1>
-				<p>Order Confirmation</p>
-			</div>
-
-			<!-- Content -->
-			<div class="content">
-				<p class="greeting">Hey {{customer_name}},</p>
-				<p>Your delicious order has been confirmed and we're preparing it with passion! Thank you for choosing Pezza Pizzeria since 1940.</p>
-
-				<div class="section-title">📋 Order Details</div>
-				<div class="order-details">
-					<div class="item">
-						<span class="item-name">Hawaiian Pizza</span>
-						<span class="item-price">ZA 89.90</span>
-					</div>
-					<div class="item">
-						<span class="item-name">Pepperoni Pizza</span>
-						<span class="item-price">ZA 99.90</span>
-					</div>
-					<div class="item">
-						<span class="item-name">Delivery Fee</span>
-						<span class="item-price">ZA 15.00</span>
-					</div>
-				</div>
-
-				<div class="total-section">
-					<span class="total-label">Total Amount</span>
-					<span class="total-amount">ZA 204.80</span>
-				</div>
-
-				<div class="section-title">📍 Delivery Address</div>
-				<p>{{delivery_address}}</p>
-
-				<div class="section-title">⏱️ Estimated Time</div>
-				<p>Your pizza will arrive in approximately <strong>30-45 minutes</strong>.</p>
-
-				<p style="text-align: center; margin-top: 32px;">
-					<a href="https://pezza.example.com/track/{{order_id}}" class="cta-button">Track Your Order</a>
-				</p>
-
-				<div class="divider"></div>
-
-				<p>If you have any questions, please reply to this email or contact us at support@pezza.com</p>
-				<p>Thank you for your order! 🙏</p>
-			</div>
-
-			<!-- Footer -->
-			<div class="footer">
-				<p>&copy; 2025 Pezza Pizzeria. All rights reserved.</p>
-				<p>Making delicious memories since 1940 🍕</p>
-				<p>📧 support@pezza.com | 📱 +55 (11) 98765-4321</p>
-			</div>
-		</div>
-	</body>
-</html>
-		<style>
-			* {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
-			}
-
-			body {
-				font-family: 'Belleza', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-				background-color: #1a1a1a;
+				font-family: "Belleza", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+				background-color: #212121;
 				color: #e5e7eb;
 			}
 
@@ -387,7 +158,7 @@
 			}
 
 			.footer {
-				background-color: #1a1a1a;
+				background-color: #212121;
 				padding: 1.5rem;
 				text-align: center;
 				color: #b0b0b0;
@@ -500,44 +271,37 @@
 				<div class="total-section">
 					<div class="total-row">
 						<span>Subtotal:</span>
-						<span>ZA 189.80</span>
+						<span>189.80</span>
 					</div>
 					<div class="total-row">
 						<span>Delivery:</span>
-						<span>ZA 10.00</span>
+						<span>10.00</span>
 					</div>
 					<div class="total-row">
 						<span>Tax:</span>
-						<span>ZA 29.97</span>
+						<span>29.97</span>
 					</div>
 					<div class="total-row final">
 						<span>Total:</span>
-						<span>ZA 229.77</span>
+						<span>229.77</span>
 					</div>
 				</div>
 
 				<!-- Special Instructions -->
 				<div class="section">
 					<div class="section-title">📝 Special Instructions</div>
-					<p style="color: #b0b0b0; background-color: #0f1229; padding: 1rem; border-radius: 0.5rem">
-						{{SPECIAL_INSTRUCTIONS}}
-					</p>
+					<p style="color: #b0b0b0; background-color: #212121; padding: 1rem; border-radius: 0.5rem">{{SPECIAL_INSTRUCTIONS}}</p>
 				</div>
 
 				<div class="divider"></div>
 
 				<!-- Call to Action -->
-				<p style="text-align: center; color: #fec844; font-weight: 600; margin: 1.5rem 0">
-					Estimated Delivery Time: 30-45 minutes ⏱️
-				</p>
+				<p style="text-align: center; color: #fec844; font-weight: 600; margin: 1.5rem 0">Estimated Delivery Time: 30-45 minutes ⏱️</p>
 
 				<!-- Status -->
 				<div class="section">
 					<div class="section-title">✅ Order Status</div>
-					<p style="color: #b0b0b0">
-						Your order has been confirmed and is being prepared. You'll receive a notification
-						when your order is out for delivery.
-					</p>
+					<p style="color: #b0b0b0">Your order has been confirmed and is being prepared. You'll receive a notification when your order is out for delivery.</p>
 				</div>
 			</div>
 
@@ -551,195 +315,5 @@
 				</p>
 			</div>
 		</div>
-	</body>
-</html>
-				padding: 12px 24px;
-				background: linear-gradient(to right, #ff6b35, #ff8c5a);
-				color: white !important;
-				text-decoration: none !important;
-				border-radius: 8px;
-				font-weight: 600;
-				text-align: center;
-				transition: all 0.3s ease;
-			}
-
-			.btn:hover {
-				background: linear-gradient(to right, #e55a2b, #ff6b35);
-			}
-
-			@media (max-width: 700px) {
-				.desktop_hide table.icons-inner {
-					display: inline-block !important;
-				}
-
-				.icons-inner {
-					text-align: center;
-				}
-
-				.icons-inner td {
-					margin: 0 auto;
-				}
-
-				.fullMobileWidth,
-				.row-content {
-					width: 100% !important;
-				}
-
-				.mobile_hide {
-					display: none;
-				}
-
-				.stack .column {
-					width: 100%;
-					display: block;
-				}
-
-				.mobile_hide {
-					min-height: 0;
-					max-height: 0;
-					max-width: 0;
-					overflow: hidden;
-					font-size: 0px;
-				}
-
-				.desktop_hide,
-				.desktop_hide table {
-					display: table !important;
-					max-height: none !important;
-				}
-			}
-		</style>
-	</head>
-	<body style="background-color: #f9f9f9; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none">
-		<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f9f9f9" width="100%">
-			<tbody>
-				<tr>
-					<td>
-						<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
-							<tbody>
-								<tr>
-									<td>
-										<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #333; color: #000000; width: 680px" width="680">
-											<tbody>
-												<tr>
-													<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: middle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px" width="100%">
-														<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
-															<tr>
-																<td class="pad" style="padding-bottom: 10px; padding-top: 10px; width: 100%; padding-right: 0px; padding-left: 0px">
-																	<div align="center" class="alignment" style="line-height: 10px">
-																		<img
-																			alt="Pezza Logo"
-																			src="https://github.com/entelect-incubator/.NET/raw/master/Phase%207/pezza-logo.png"
-																			style="display: block; height: auto; border: 0; height: 150px; max-width: 100%"
-																			title="Pezza Logo"
-																			height="150"
-																		/>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
-							<tbody>
-								<tr>
-									<td>
-										<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 680px" width="680">
-											<tbody>
-												<tr>
-													<td
-														class="column column-1"
-														style="
-															mso-table-lspace: 0pt;
-															mso-table-rspace: 0pt;
-															font-weight: 400;
-															text-align: left;
-															border-left: 1px solid #333333;
-															border-right: 1px solid #333333;
-															padding-bottom: 20px;
-															padding-top: 20px;
-															vertical-align: top;
-															border-top: 0px;
-															border-bottom: 0px;
-														"
-														width="100%"
-													>
-														<table border="0" cellpadding="0" cellspacing="0" class="text_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word" width="100%">
-															<tr>
-																<td class="pad" style="padding-bottom: 25px; padding-left: 20px; padding-right: 20px; padding-top: 10px">
-																	<div style="font-family: Arial, sans-serif">
-																		<div class="" style="font-size: 14px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; mso-line-height-alt: 16.8px; color: #2f2f2f; line-height: 1.2">
-																			<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px"><span style="font-size: 42px">Order Received</span></p>
-																		</div>
-																	</div>
-																</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" class="text_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word" width="100%">
-															<tr>
-																<td class="pad" style="padding-bottom: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px">
-																	<div style="font-family: sans-serif">
-																		<div class="" style="font-size: 14px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 21px; color: #2f2f2f; line-height: 1.5">
-																			<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 24px"><span style="font-size: 16px">Hi %name%,</span></p>
-																			<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 21px"> </p>
-																			<p style="margin: 0; mso-line-height-alt: 21px"> </p>
-																			<p style="margin: 0; text-align: center; mso-line-height-alt: 21px">An order for your pizza has been placed, and it will arrive piping hot!</p>
-																			<p style="margin: 0; text-align: center; mso-line-height-alt: 21px"> </p>
-																			<p style="margin: 0; text-align: center; mso-line-height-alt: 21px">%pizzas%</p>
-																		</div>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
-							<tbody>
-								<tr>
-									<td>
-										<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #333333; color: #000000; width: 680px" width="680">
-											<tbody>
-												<tr>
-													<td
-														class="column column-1"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px"
-														width="100%"
-													>
-														<table border="0" cellpadding="10" cellspacing="0" class="text_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word" width="100%">
-															<tr>
-																<td class="pad">
-																	<div style="font-family: sans-serif">
-																		<div class="" style="font-size: 14px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 21px; color: #f9f9f9; line-height: 1.5">
-																			<p style="margin: 0; font-size: 12px; text-align: center; mso-line-height-alt: 21px"> </p>
-																		</div>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<!-- End -->
 	</body>
 </html>

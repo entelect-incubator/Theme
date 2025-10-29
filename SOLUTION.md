@@ -11,8 +11,10 @@
 ## 🚀 Immediate Solution (Works NOW)
 
 ### 1. Open the Website
-```
-Double-click: D:\Dev\Incubator\Theme\index.html
+```bash
+# Open in your browser:
+# Windows: Double-click index.html
+# macOS/Linux: open index.html (macOS) or xdg-open index.html (Linux)
 ```
 
 ### 2. It Works!
