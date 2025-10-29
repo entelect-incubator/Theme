@@ -303,12 +303,15 @@ section {
 
 /* Make footer a final snap target (full viewport) so scrolling can snap to it */
 footer {
-	/* Snap to footer but don't force full viewport height — keep it compact */
+	/* Force the footer to occupy the full viewport when snapped, but keep
+	   its inner content visually anchored to the bottom using flex-end. */
 	scroll-snap-align: start;
-	padding: 4rem 0; /* vertical breathing room without a full-page footer */
+	min-height: 100vh; /* full viewport snap target */
 	display: flex;
-	align-items: center;
+	align-items: flex-end; /* keep footer content at the bottom of the viewport */
 	justify-content: center;
+	padding-top: 2rem; /* small top padding so content doesn't touch the very bottom */
+	padding-bottom: 4rem; /* breathing room from bottom edge */
 }
 
 .theme-toggle {
