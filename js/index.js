@@ -189,3 +189,29 @@
     // initial
     onScroll();
 })();
+
+/* ============================================
+   Footer snap visibility observer
+   Adds/removes `.footer-visible` when the footer is in view so CSS can
+   animate the footer when snapped into the viewport.
+============================================ */
+(function () {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+
+    // Use IntersectionObserver to toggle a presentational class when the
+    // footer is sufficiently visible (60% of viewport height).
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.55) {
+                footer.classList.add('footer-visible');
+            } else {
+                footer.classList.remove('footer-visible');
+            }
+        });
+    }, {
+        threshold: [0, 0.25, 0.5, 0.75, 1]
+    });
+
+    io.observe(footer);
+})();

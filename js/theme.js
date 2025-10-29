@@ -10,6 +10,12 @@ class ThemeSwitcher {
     this.themeLabel = document.getElementById('theme-label');
     this.storageKey = 'pezza-theme';
 
+    // If required elements are missing, avoid initializing and fail gracefully.
+    if (!this.themeToggle || !this.themeIcon || !this.themeLabel) {
+      console.warn('ThemeSwitcher: Required elements not found. Theme switcher disabled.');
+      return;
+    }
+
     this.init();
   }
 
@@ -42,13 +48,13 @@ class ThemeSwitcher {
   setTheme(theme) {
     if (theme === 'dark') {
       this.html.classList.add('dark');
-      this.themeIcon.textContent = '☀️';
-      this.themeLabel.textContent = 'Light';
+      if (this.themeIcon) this.themeIcon.textContent = '☀️';
+      if (this.themeLabel) this.themeLabel.textContent = 'Light';
       document.body.style.colorScheme = 'dark';
     } else {
       this.html.classList.remove('dark');
-      this.themeIcon.textContent = '🌙';
-      this.themeLabel.textContent = 'Dark';
+      if (this.themeIcon) this.themeIcon.textContent = '🌙';
+      if (this.themeLabel) this.themeLabel.textContent = 'Dark';
       document.body.style.colorScheme = 'light';
     }
     localStorage.setItem(this.storageKey, theme);

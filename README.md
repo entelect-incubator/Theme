@@ -305,17 +305,7 @@ Then run `npm run build` to regenerate CSS.
 
 MIT
 
-// Copy js/theme.js for dark mode switcher
-import ThemeSwitcher from './components/ThemeSwitcher';
-
-function App() {
-  return (
-    <>
-      <ThemeSwitcher />
-      {/* Your app */}
-    </>
-  );
-}
+For an example theme switcher component, see `js/theme.js` in this repo. The demo includes a small, framework-agnostic switcher that toggles the `dark` class on the `html` element.
 ```
 
 Import Tailwind CDN in `public/index.html`:
