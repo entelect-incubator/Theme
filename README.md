@@ -2,6 +2,8 @@
 
 Pezza is a lightweight, framework-agnostic Tailwind CSS theme focused on a simple light/dark design system and reusable component utilities (buttons, cards, forms, alerts). This README explains intent, quick setup, and how to integrate the compiled CSS in React, Angular, Vue or plain HTML projects.
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/entelect-incubator/Theme?utm_source=oss&utm_medium=github&utm_campaign=entelect-incubator%2FTheme&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 ## Intent
 - Provide a ready-to-use styling system that ships as compiled CSS (`css/theme.css`).
 - Keep behavior minimal: theme toggling is done by toggling the `dark` class on the `html` element (no framework dependency).
