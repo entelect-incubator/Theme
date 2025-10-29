@@ -1,0 +1,31 @@
+{
+  "name": "pezza-incubator-theme",
+  "version": "3.0.0",
+  "description": "Modern Tailwind-based theme for Incubator projects - Framework-agnostic (React, Angular, Vue, etc)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 8000 --cors",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/theme.css",
+    "watch": "npx tailwindcss -i ./css/input.css -o ./css/theme.css --watch",
+    "serve": "npx http-server . -p 8000 --cors"
+  },
+  "keywords": [
+    "theme",
+    "tailwind",
+    "incubator",
+    "framework-agnostic",
+    "responsive",
+    "dark-mode",
+    "light-mode",
+    "react",
+    "angular",
+    "vue"
+  ],
+  "author": "Entelect",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "http-server": "^14.1.0"
+  }
+}
+
