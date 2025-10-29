@@ -473,4 +473,4 @@ Your theme is now ready for any Incubator project. Copy it, customize it, and bu
 
 ---
 
-**Theme Version**: 3.0.0 | **Last Updated**: 2024 | **License**: MIT
+**Theme Version**: 3.0.0 | **Last Updated**: 2025 | **License**: MIT

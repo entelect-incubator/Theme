@@ -78,14 +78,14 @@ npm run serve     # Start local server
 
 ## 📁 Key Files
 
-| File | Purpose | Status |
-|------|---------|--------|
-| `index.html` | Main page | ✅ Fixed & ready |
-| `css/theme.min.css` | Compiled CSS | ✅ Ready |
-| `css/theme.css` | Tailwind source | ✅ Ready |
-| `tailwind.config.js` | Config | ✅ Ready |
-| `package.json` | npm scripts | ✅ Ready |
-| `setup.bat` | One-click setup | ✅ Ready |
+| File                 | Purpose         | Status          |
+| -------------------- | --------------- | --------------- |
+| `index.html`         | Main page       | ✅ Fixed & ready |
+| `css/theme.min.css`  | Compiled CSS    | ✅ Ready         |
+| `css/theme.css`      | Tailwind source | ✅ Ready         |
+| `tailwind.config.js` | Config          | ✅ Ready         |
+| `package.json`       | npm scripts     | ✅ Ready         |
+| `setup.bat`          | One-click setup | ✅ Ready         |
 
 ---
 
@@ -232,13 +232,13 @@ Your Pezza Theme is now:
 
 ## 📞 Quick Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Website won't load | Make sure `index.html` exists |
-| CSS not applying | Hard refresh: `Ctrl+Shift+R` |
-| Images not showing | Check `images/` folder has files |
-| Video not playing | Check `videos/` folder has mp4 |
-| Want auto-rebuild | Run `npm install` then `npm run dev` |
+| Issue              | Solution                             |
+| ------------------ | ------------------------------------ |
+| Website won't load | Make sure `index.html` exists        |
+| CSS not applying   | Hard refresh: `Ctrl+Shift+R`         |
+| Images not showing | Check `images/` folder has files     |
+| Video not playing  | Check `videos/` folder has mp4       |
+| Want auto-rebuild  | Run `npm install` then `npm run dev` |
 
 ---
 
@@ -266,5 +266,5 @@ Your Pezza Theme is now:
 **Status:** ✅ COMPLETE & READY TO USE
 **CSS:** ✅ Compiled and working
 **Setup:** ✅ Optional (not required)
-**Last Updated:** 2024
+**Last Updated:** 2025
 **Version:** 2.0

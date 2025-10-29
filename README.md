@@ -1002,7 +1002,7 @@ Found a bug or have a suggestion? Please create an issue or submit a pull reques
 
 ## 📄 License
 
-MIT © 2024 Entelect Incubator
+MIT © 2025 Entelect Incubator
 
 This is the **fastest and easiest** way to use the theme. Works with all frameworks!
 
