@@ -1,0 +1,113 @@
+<!-- Product Card Component -->
+<div class="card card-hover">
+	<img src="image.jpg" alt="Product" class="w-full h-48 object-cover rounded-lg mb-4" />
+	<h3 class="text-xl font-bold text-gray-900 mb-2">Product Name</h3>
+	<p class="text-gray-600 mb-4">Product description goes here.</p>
+	<div class="flex items-center justify-between">
+		<span class="text-2xl font-bold text-orange-500">$99.99</span>
+		<button class="btn btn-primary btn-sm">Add to Cart</button>
+	</div>
+</div>
+
+<!-- Feature Card -->
+<div class="card">
+	<div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+		<svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+			<path d="..." />
+		</svg>
+	</div>
+	<h3 class="text-lg font-bold text-gray-900 mb-2">Feature Name</h3>
+	<p class="text-gray-600">Brief feature description.</p>
+</div>
+
+<!-- Hero Section -->
+<section class="relative py-20 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+	<div class="container-responsive text-center">
+		<h1 class="text-5xl font-bold mb-4">Welcome</h1>
+		<p class="text-xl mb-8">Create amazing things</p>
+		<button class="btn btn-primary">Get Started</button>
+	</div>
+</section>
+
+<!-- Form Section -->
+<section class="py-16 bg-gray-50">
+	<div class="container-responsive max-w-md mx-auto">
+		<h2 class="section-title mb-8">Contact Us</h2>
+		<form class="space-y-4">
+			<div>
+				<label class="label">Name</label>
+				<input class="input-field" type="text" placeholder="Your name" />
+			</div>
+			<div>
+				<label class="label">Email</label>
+				<input class="input-field" type="email" placeholder="you@example.com" />
+			</div>
+			<div>
+				<label class="label">Message</label>
+				<textarea class="input-field" rows="4" placeholder="Your message..."></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary w-full">Send</button>
+		</form>
+	</div>
+</section>
+
+<!-- Grid Section -->
+<section class="py-16">
+	<div class="container-responsive">
+		<h2 class="section-title mb-12">Our Services</h2>
+		<div class="grid-responsive">
+			<div class="card">
+				<h3 class="text-lg font-bold mb-2">Service 1</h3>
+				<p class="text-gray-600">Description of service</p>
+			</div>
+			<div class="card">
+				<h3 class="text-lg font-bold mb-2">Service 2</h3>
+				<p class="text-gray-600">Description of service</p>
+			</div>
+			<div class="card">
+				<h3 class="text-lg font-bold mb-2">Service 3</h3>
+				<p class="text-gray-600">Description of service</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Navigation -->
+<nav class="bg-white shadow">
+	<div class="container-responsive flex items-center justify-between py-4">
+		<div class="text-2xl font-bold text-orange-500">Logo</div>
+		<div class="flex gap-6">
+			<a href="#" class="text-gray-700 hover:text-orange-500 font-medium">Home</a>
+			<a href="#" class="text-gray-700 hover:text-orange-500 font-medium">About</a>
+			<a href="#" class="text-gray-700 hover:text-orange-500 font-medium">Services</a>
+			<a href="#" class="text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+		</div>
+	</div>
+</nav>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+	<div class="container-responsive">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+			<div>
+				<h3 class="font-bold mb-4">About</h3>
+				<p class="text-gray-400">Your company description goes here.</p>
+			</div>
+			<div>
+				<h3 class="font-bold mb-4">Links</h3>
+				<ul class="text-gray-400 space-y-2">
+					<li><a href="#" class="hover:text-white">Home</a></li>
+					<li><a href="#" class="hover:text-white">About</a></li>
+					<li><a href="#" class="hover:text-white">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="font-bold mb-4">Contact</h3>
+				<p class="text-gray-400">contact@example.com</p>
+			</div>
+		</div>
+		<div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+			<p>&copy; 2025 Company Name. All rights reserved.</p>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<title>Pezza - Order Confirmation</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: "Belleza", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+				background-color: #212121;
+				color: #e5e7eb;
+			}
+
+			a[x-apple-data-detectors] {
+				color: inherit !important;
+				text-decoration: inherit !important;
+			}
+
+			p {
+				line-height: 1.5;
+			}
+
+			.email-container {
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #2d2d2d;
+				border: 1px solid #4a4a4a;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+			}
+
+			.header {
+				background-color: #dc3348;
+				padding: 2rem 1.5rem;
+				text-align: center;
+				color: white;
+			}
+
+			.header h1 {
+				font-size: 2rem;
+				margin: 0;
+				font-weight: bold;
+			}
+
+			.header p {
+				font-size: 0.875rem;
+				margin: 0.5rem 0 0 0;
+				opacity: 0.9;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				color: #e5e7eb;
+			}
+
+			.section {
+				margin-bottom: 2rem;
+			}
+
+			.section-title {
+				font-size: 1.25rem;
+				font-weight: 700;
+				color: #fec844;
+				margin-bottom: 1rem;
+				border-bottom: 2px solid #dc3348;
+				padding-bottom: 0.5rem;
+			}
+
+			.order-item {
+				background-color: #3a3a3a;
+				padding: 1rem;
+				margin-bottom: 0.75rem;
+				border-left: 4px solid #dc3348;
+				border-radius: 0.5rem;
+			}
+
+			.order-item-name {
+				font-weight: 600;
+				color: white;
+				margin-bottom: 0.25rem;
+			}
+
+			.order-item-price {
+				color: #fec844;
+				font-weight: 700;
+				font-size: 1.125rem;
+			}
+
+			.customer-info {
+				background-color: #3a3a3a;
+				padding: 1rem;
+				border-radius: 0.5rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.info-row {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 0.5rem;
+				font-size: 0.9rem;
+			}
+
+			.info-label {
+				font-weight: 600;
+				color: #fec844;
+			}
+
+			.info-value {
+				color: #b0b0b0;
+			}
+
+			.total-section {
+				background-color: #3a3a3a;
+				border: 2px solid #fec844;
+				padding: 1.5rem;
+				border-radius: 0.5rem;
+				margin-bottom: 2rem;
+			}
+
+			.total-row {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 0.75rem;
+				font-size: 1rem;
+				color: #e5e7eb;
+			}
+
+			.total-row.final {
+				border-top: 2px solid #dc3348;
+				padding-top: 0.75rem;
+				font-size: 1.5rem;
+				font-weight: bold;
+				color: #fec844;
+			}
+
+			.btn {
+				display: inline-block;
+				background-color: #dc3348;
+				color: white;
+				padding: 1rem 2rem;
+				text-decoration: none;
+				border-radius: 0.5rem;
+				font-weight: 600;
+				text-align: center;
+				margin: 1rem 0;
+				font-size: 1rem;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			.btn:hover {
+				background-color: #a8233d;
+			}
+
+			.footer {
+				background-color: #212121;
+				padding: 1.5rem;
+				text-align: center;
+				color: #b0b0b0;
+				font-size: 0.875rem;
+				border-top: 1px solid #4a4a4a;
+			}
+
+			.footer p {
+				margin: 0.5rem 0;
+			}
+
+			.footer a {
+				color: #fec844;
+				text-decoration: none;
+			}
+
+			.divider {
+				height: 1px;
+				background-color: #4a4a4a;
+				margin: 1.5rem 0;
+			}
+
+			@media only screen and (max-width: 600px) {
+				.email-container {
+					width: 100%;
+				}
+
+				.header {
+					padding: 1.5rem 1rem;
+				}
+
+				.header h1 {
+					font-size: 1.5rem;
+				}
+
+				.content {
+					padding: 1.5rem 1rem;
+				}
+
+				.info-row {
+					flex-direction: column;
+				}
+
+				.info-value {
+					margin-top: 0.25rem;
+					margin-left: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="email-container">
+			<!-- Header -->
+			<div class="header">
+				<h1>🍕 Pezza Pizzeria</h1>
+				<p>Your Order Confirmation</p>
+			</div>
+
+			<!-- Content -->
+			<div class="content">
+				<!-- Welcome Section -->
+				<p style="color: #e5e7eb; margin-bottom: 1rem">
+					Thank you for your order! 🎉<br />
+					Your delicious pizzas will be ready soon.
+				</p>
+
+				<div class="divider"></div>
+
+				<!-- Order Items Section -->
+				<div class="section">
+					<div class="section-title">📋 Your Order</div>
+					<div class="order-item">
+						<div class="order-item-name">Hawaiian Pizza</div>
+						<div class="order-item-price">ZA 89.90</div>
+					</div>
+					<div class="order-item">
+						<div class="order-item-name">Pepperoni Pizza</div>
+						<div class="order-item-price">ZA 99.90</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<!-- Customer Info Section -->
+				<div class="section">
+					<div class="section-title">👤 Delivery Information</div>
+					<div class="customer-info">
+						<div class="info-row">
+							<div class="info-label">Name:</div>
+							<div class="info-value">{{CUSTOMER_NAME}}</div>
+						</div>
+						<div class="info-row">
+							<div class="info-label">Email:</div>
+							<div class="info-value">{{CUSTOMER_EMAIL}}</div>
+						</div>
+						<div class="info-row">
+							<div class="info-label">Phone:</div>
+							<div class="info-value">{{CUSTOMER_PHONE}}</div>
+						</div>
+						<div class="info-row">
+							<div class="info-label">Address:</div>
+							<div class="info-value">{{CUSTOMER_ADDRESS}}</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<!-- Total Section -->
+				<div class="total-section">
+					<div class="total-row">
+						<span>Subtotal:</span>
+						<span>189.80</span>
+					</div>
+					<div class="total-row">
+						<span>Delivery:</span>
+						<span>10.00</span>
+					</div>
+					<div class="total-row">
+						<span>Tax:</span>
+						<span>29.97</span>
+					</div>
+					<div class="total-row final">
+						<span>Total:</span>
+						<span>229.77</span>
+					</div>
+				</div>
+
+				<!-- Special Instructions -->
+				<div class="section">
+					<div class="section-title">📝 Special Instructions</div>
+					<p style="color: #b0b0b0; background-color: #212121; padding: 1rem; border-radius: 0.5rem">{{SPECIAL_INSTRUCTIONS}}</p>
+				</div>
+
+				<div class="divider"></div>
+
+				<!-- Call to Action -->
+				<p style="text-align: center; color: #fec844; font-weight: 600; margin: 1.5rem 0">Estimated Delivery Time: 30-45 minutes ⏱️</p>
+
+				<!-- Status -->
+				<div class="section">
+					<div class="section-title">✅ Order Status</div>
+					<p style="color: #b0b0b0">Your order has been confirmed and is being prepared. You'll receive a notification when your order is out for delivery.</p>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="footer">
+				<p>&copy; 2025 Pezza Pizzeria. All rights reserved.</p>
+				<p>Making delicious memories since 1940 🍕</p>
+				<p>
+					Questions?
+					<a href="mailto:support@pezzapizzeria.com">Contact Us</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

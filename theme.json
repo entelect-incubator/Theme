@@ -1,0 +1,169 @@
+{
+  "name": "Pezza Incubator Theme 3.0",
+  "version": "3.0.0",
+  "description": "Clean, modern, framework-agnostic theme for React, Angular, Vue, and vanilla JS",
+  "author": "Entelect",
+  "license": "MIT",
+  "colors": {
+    "primary": {
+      "50": "#fdf2f4",
+      "100": "#fce7eb",
+      "200": "#f8d3dd",
+      "300": "#f4aec4",
+      "400": "#ec7fa8",
+      "500": "#dc3348",
+      "600": "#c21b35",
+      "700": "#a2182e",
+      "800": "#871a2d",
+      "900": "#721b2d",
+      "hex": "#dc3348"
+    },
+    "secondary": {
+      "50": "#fefce8",
+      "100": "#fffacd",
+      "200": "#fff59d",
+      "300": "#ffef5f",
+      "400": "#fec844",
+      "500": "#f8b500",
+      "600": "#d99500",
+      "700": "#b27600",
+      "800": "#6b4500",
+      "900": "#4a3200",
+      "hex": "#fec844"
+    },
+    "status": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6"
+    },
+    "dark": {
+      "background": "#1a1a1a",
+      "surface": "#2a2a2a",
+      "card": "#353535",
+      "border": "#454545",
+      "text": "#e5e7eb",
+      "textSecondary": "#a0aec0"
+    },
+    "light": {
+      "background": "#ffffff",
+      "surface": "#f9fafb",
+      "card": "#f3f4f6",
+      "border": "#e5e7eb",
+      "text": "#1f2937",
+      "textSecondary": "#6b7280"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "primary": "'Belleza', 'Segoe UI', system-ui, sans-serif",
+      "accent": "'Cookie', cursive"
+    },
+    "sizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "weights": {
+      "light": 300,
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700
+    },
+    "lineHeights": {
+      "tight": 1.25,
+      "normal": 1.5,
+      "relaxed": 1.75
+    }
+  },
+  "spacing": {
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "2.5rem",
+    "3xl": "3rem",
+    "4xl": "4rem",
+    "5xl": "5rem"
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "padding": "0.75rem 1.5rem",
+        "borderRadius": "0.5rem",
+        "fontWeight": 600,
+        "transition": "all 0.2s ease",
+        "backgroundColor": "#dc3348",
+        "color": "white",
+        "hoverBackgroundColor": "#c21b35"
+      }
+    },
+    "card": {
+      "padding": "1.5rem",
+      "borderRadius": "1rem",
+      "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+      "transition": "all 0.3s ease"
+    },
+    "input": {
+      "padding": "0.75rem 1rem",
+      "borderRadius": "0.5rem",
+      "border": "1px solid #e5e7eb",
+      "fontSize": "1rem",
+      "transition": "all 0.2s ease",
+      "darkBorder": "1px solid #666"
+    }
+  },
+  "shadows": {
+    "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.1)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.1)"
+  },
+  "borderRadius": {
+    "none": "0",
+    "sm": "0.25rem",
+    "md": "0.5rem",
+    "lg": "1rem",
+    "xl": "1.5rem",
+    "full": "9999px"
+  },
+  "transitions": {
+    "fast": "150ms ease-in-out",
+    "base": "200ms ease-in-out",
+    "slow": "300ms ease-in-out",
+    "slower": "500ms ease-in-out"
+  },
+  "cssVariables": {
+    "light": {
+      "--bg-color": "#ffffff",
+      "--bg-surface": "#f9fafb",
+      "--text-color": "#1f2937",
+      "--text-secondary": "#6b7280",
+      "--border-color": "#e5e7eb",
+      "--input-bg": "#ffffff"
+    },
+    "dark": {
+      "--bg-color": "#1a1a1a",
+      "--bg-surface": "#2a2a2a",
+      "--text-color": "#e5e7eb",
+      "--text-secondary": "#a0aec0",
+      "--border-color": "#454545",
+      "--input-bg": "#353535"
+    }
+  }
+}
+

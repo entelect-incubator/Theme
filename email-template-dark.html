@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pezza Pizzeria - Order Confirmation</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: "Belleza", Segoe UI, system-ui, sans-serif;
+				background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+				padding: 20px;
+				color: #e5e7eb;
+			}
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				background: #2a2a2a;
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+			}
+			.header {
+				background: linear-gradient(135deg, #dc3348 0%, #c21b35 100%);
+				padding: 40px 30px;
+				text-align: center;
+				border-bottom: 4px solid #fec844;
+			}
+			.header h1 {
+				font-family: "Cookie", cursive;
+				font-size: 42px;
+				color: white;
+				margin-bottom: 10px;
+			}
+			.header p {
+				color: #f9fafb;
+				font-size: 14px;
+				letter-spacing: 0.5px;
+			}
+			.content {
+				padding: 40px 30px;
+			}
+			.section {
+				margin-bottom: 30px;
+			}
+			.section-title {
+				font-size: 16px;
+				font-weight: 600;
+				color: #fec844;
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.order-item {
+				background: #353535;
+				padding: 15px;
+				border-radius: 8px;
+				margin-bottom: 12px;
+				border-left: 4px solid #dc3348;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.item-name {
+				font-weight: 600;
+				color: #fff;
+			}
+			.item-price {
+				color: #fec844;
+				font-weight: 600;
+				font-size: 16px;
+			}
+			.customer-info {
+				background: #353535;
+				padding: 20px;
+				border-radius: 8px;
+				line-height: 1.8;
+			}
+			.info-row {
+				margin-bottom: 10px;
+			}
+			.info-label {
+				color: #a0aec0;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+			.info-value {
+				color: #e5e7eb;
+				font-weight: 500;
+			}
+			.summary {
+				background: #353535;
+				padding: 20px;
+				border-radius: 8px;
+				border-top: 2px solid #dc3348;
+			}
+			.summary-row {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 10px;
+				font-size: 14px;
+			}
+			.summary-label {
+				color: #a0aec0;
+			}
+			.summary-value {
+				color: #e5e7eb;
+				font-weight: 500;
+			}
+			.summary-total {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 10px;
+				border-top: 1px solid #454545;
+				margin-top: 15px;
+				font-size: 18px;
+				font-weight: 600;
+			}
+			.total-label {
+				color: #fec844;
+			}
+			.total-value {
+				color: #fec844;
+			}
+			.cta-button {
+				display: inline-block;
+				background: linear-gradient(135deg, #dc3348 0%, #c21b35 100%);
+				color: white;
+				padding: 14px 32px;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 600;
+				margin-top: 10px;
+				border: none;
+				cursor: pointer;
+				font-family: "Belleza", Segoe UI, system-ui, sans-serif;
+				font-size: 14px;
+				transition: transform 0.2s ease;
+			}
+			.cta-button:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(220, 51, 72, 0.4);
+			}
+			.action-box {
+				text-align: center;
+				background: #353535;
+				padding: 20px;
+				border-radius: 8px;
+				margin-top: 20px;
+				border: 2px solid #dc3348;
+			}
+			.footer {
+				background: #1a1a1a;
+				padding: 30px;
+				text-align: center;
+				border-top: 1px solid #454545;
+				font-size: 12px;
+				color: #a0aec0;
+				line-height: 1.6;
+			}
+			.footer a {
+				color: #fec844;
+				text-decoration: none;
+			}
+			.status-badge {
+				display: inline-block;
+				background: #10b981;
+				color: white;
+				padding: 6px 12px;
+				border-radius: 20px;
+				font-size: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-top: 10px;
+			}
+			.logo {
+				font-family: "Cookie", cursive;
+				font-size: 24px;
+				color: #fec844;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Header -->
+			<div class="header">
+				<h1>🍕 Pezza Pizzeria</h1>
+				<p>Your Order Confirmation</p>
+			</div>
+
+			<!-- Content -->
+			<div class="content">
+				<!-- Greeting -->
+				<div class="section">
+					<p style="color: #e5e7eb; margin-bottom: 15px">Hello <strong style="color: #fec844">John Doe</strong>,</p>
+					<p style="color: #a0aec0; line-height: 1.6">Thank you for your order! We've received your request and will start preparing your delicious pizzas right away. Your order will be delivered within 30-45 minutes.</p>
+					<div class="status-badge">✓ Order Confirmed</div>
+				</div>
+
+				<!-- Order Items -->
+				<div class="section">
+					<h2 class="section-title">📋 Your Order</h2>
+					<div class="order-item">
+						<span class="item-name">Hawaiian Pizza</span>
+						<span class="item-price">ZA 89.90</span>
+					</div>
+					<div class="order-item">
+						<span class="item-name">Pepperoni Pizza</span>
+						<span class="item-price">ZA 99.90</span>
+					</div>
+				</div>
+
+				<!-- Customer Details -->
+				<div class="section">
+					<h2 class="section-title">📍 Delivery Details</h2>
+					<div class="customer-info">
+						<div class="info-row">
+							<div class="info-label">Delivery Address</div>
+							<div class="info-value">123 Main Street, Apt 4B, São Paulo, SP 01311-100</div>
+						</div>
+						<div class="info-row">
+							<div class="info-label">Contact Number</div>
+							<div class="info-value">+55 (11) 99999-9999</div>
+						</div>
+						<div class="info-row">
+							<div class="info-label">Special Instructions</div>
+							<div class="info-value">No onions, extra cheese</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Order Summary -->
+				<div class="section">
+					<h2 class="section-title">💰 Order Summary</h2>
+					<div class="summary">
+						<div class="summary-row">
+							<span class="summary-label">Subtotal</span>
+							<span class="summary-value">ZA 189.80</span>
+						</div>
+						<div class="summary-row">
+							<span class="summary-label">Delivery Fee</span>
+							<span class="summary-value">ZA 15.00</span>
+						</div>
+						<div class="summary-row">
+							<span class="summary-label">Tax</span>
+							<span class="summary-value">ZA 12.54</span>
+						</div>
+						<div class="summary-total">
+							<span class="total-label">Total</span>
+							<span class="total-value">ZA 217.34</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Estimated Delivery -->
+				<div class="section">
+					<h2 class="section-title">⏱️ Estimated Delivery</h2>
+					<div class="action-box">
+						<p style="color: #fec844; font-size: 24px; font-weight: 600; margin-bottom: 5px">30-45 minutes</p>
+						<p style="color: #a0aec0; font-size: 13px">Order will be delivered by <strong style="color: #e5e7eb">03:45 PM</strong></p>
+					</div>
+				</div>
+
+				<!-- Next Steps -->
+				<div class="section">
+					<h2 class="section-title">What Happens Next?</h2>
+					<p style="color: #a0aec0; line-height: 1.8; margin-bottom: 15px">
+						✓ We're preparing your pizzas with the finest ingredients<br />
+						✓ Your driver will be assigned soon<br />
+						✓ You'll receive a tracking update via SMS<br />
+						✓ Enjoy your delicious meal!
+					</p>
+				</div>
+
+				<!-- Order Number -->
+				<div class="section">
+					<p style="color: #a0aec0; text-align: center; font-size: 12px">
+						<strong style="color: #fec844">Order #</strong> PZ-20251029-0042<br />
+						<strong style="color: #fec844">Order Date:</strong> Oct 29, 2025 at 3:15 PM
+					</p>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="footer">
+				<p style="margin-bottom: 15px">
+					<strong>Pezza Pizzeria</strong><br />
+					Making delicious memories since 1940 🍕
+				</p>
+				<p>
+					<a href="#support">Need Help?</a> | <a href="#track">Track Order</a> |
+					<a href="#account">My Account</a>
+				</p>
+				<p style="margin-top: 15px; color: #666">
+					© 2025 Pezza Pizzeria. All rights reserved.<br />
+					This is an automated message. Please do not reply to this email.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
